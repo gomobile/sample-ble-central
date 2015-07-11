@@ -1,0 +1,18 @@
+{
+	"reponame":"sample-ble-central",
+	"title":"BLE-Central",
+	"abbr":"BLE-Central",
+	"tooltip":"A sample application that demonstrates how to scan, connect, read and write data to a central from a Bluetooth Low Energy (BLE) peripheral via a service and it's specific characteristic.",
+	"description":"A sample application that demonstrates how to scan, connect, read and write data to a central from a Bluetooth Low Energy (BLE) peripheral via a service and it's specific characteristic.",
+	"articleurl":"",
+    	"screenshotUrl":"",
+    	"iconUrl":"",
+	"highlights":["BLE"],
+    	"keywords":["BLE"],
+	"visible": true,
+	"apppreview":true,
+	"type":"appdesigner",
+	"appname":"demo.blecentral",
+	"relname":"4.0.0",
+  	"projectTypeName": "com.intel.xdk.projecttype.jsapp"
+}
