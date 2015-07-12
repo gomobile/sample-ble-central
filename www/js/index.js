@@ -22,6 +22,7 @@ var app = {
     },
     refreshDeviceList: function() {
         deviceList.innerHTML = ''; // empties the list
+        console.log("scan for peripherals");
         // scan for all devices
         //ble.scan([], 5, app.onDiscoverDevice, app.onError);
         // scan for devices with service UUID FC00
@@ -71,7 +72,7 @@ var app = {
         var deviceId = event.target.dataset.deviceId;
         var str = "Hello from your mobile device";
         console.log(stringToBytes(str));
-        ble.write(deviceId, "EC00", "EC0E", stringToBytes(str), app.onWrite, app.onError);
+        ble.write(deviceId, "FC00", "FC0F", stringToBytes(str), app.onWrite, app.onError);
     },
     onWrite: function() {
         console.log("data written");
