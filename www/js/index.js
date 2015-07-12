@@ -15,7 +15,7 @@ var app = {
         readButton.addEventListener('touchstart', this.readData, false);
         writeButton.addEventListener('touchstart', this.writeData, false);
         disconnectButton.addEventListener('touchstart', this.disconnect, false);
-        deviceList.addEventListener('touchstart', this.connect, false); // assume not scrolling
+        deviceList.addEventListener('click', this.connect, false); // assume not scrolling
     },
     onDeviceReady: function() {
         app.refreshDeviceList();
