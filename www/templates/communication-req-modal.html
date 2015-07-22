@@ -1,0 +1,22 @@
+<ion-modal-view>
+	<ion-header-bar>
+		<h1 class="title">Communication Requirements</h1>
+	</ion-header-bar>
+	<ion-content>
+		<div class="align-center container">
+	  		<div class="list">
+				<label class="item item-input">
+					<span class="input-label">Peripheral's Service UUID</span>
+					<input ng-model="serviceUuid" type="text" spellcheck="false" autocorrect="off" autocomplete="off" placeholder="Blank">
+				</label>
+				<label class="item item-input">
+					<span class="input-label">Characteristic UUID</span>
+					<input ng-model="characteristicUuid" type="text" spellcheck="false" autocorrect="off" autocomplete="off" placeholder="Blank">
+				</label>
+			</div>
+			<button class="button button-block button-balanced" ng-click="closeModal(serviceUuid, characteristicUuid)">
+				Done
+			</button>
+		</div>
+	</ion-content>
+</ion-modal-view>

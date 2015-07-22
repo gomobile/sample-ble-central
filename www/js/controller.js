@@ -1,10 +1,23 @@
-BLE-Central
-============================
-A sample application that demonstrates how to scan, connect, read and write data to a central from a Bluetooth Low Energy (BLE) peripheral via a service and it's specific characteristic.
+/* global angular */
+/* global ble  */
+/* jshint browser: true , devel: true*/
 
-###Scan for all BLE peripherals with or without a Service UUID
-```javascript
-/*Description: Add discovered device to tempArray*/
+angular.module('starter.controllers', [])
+
+.controller('HomeCtrl', function($scope, $interval, $timeout, $state, blePerpheralsService) {
+
+	$scope.deviceId = "";
+	var seconds = 5;
+	var tempArray = [];
+	$scope.scanStatus = {
+		phase 	: "",
+		text	: ""
+	};
+	var timeReduction;
+
+	$scope.isScanBtnDisabled = false;
+
+	/*Description: Add discovered device to tempArray*/
 	var onDiscoverDevice = function(device) {
 	    console.log(JSON.stringify(device));
 	 	//Add device to array
@@ -73,11 +86,67 @@ A sample application that demonstrates how to scan, connect, read and write data
 	}
 
 })
-```
 
-###Read Data from connected BLE peripheral
-```javascript
-/*onRead callback*/
+.controller('ConnectionCtrl', function($scope, $state, $ionicModal, blePerpheralsService) {
+	
+	/*Ionic Modal Events and functions*/
+	$ionicModal.fromTemplateUrl('templates/communication-req-modal.html', {
+		scope: $scope,
+		animation: 'slide-in-up'
+	}).then(function(modal) {
+		$scope.modal = modal;
+	});
+
+	$scope.openModal = function() {
+		$scope.modal.show();
+	};
+
+	$scope.$on('modal.shown', function() {
+  		console.log('Modal is shown!');
+  		$scope.serviceUuid = blePerpheralsService.getServiceId();
+	});
+
+	$scope.closeModal = function(serviceUuid, characteristicUuid) {
+		blePerpheralsService.setServiceId(serviceUuid);
+		blePerpheralsService.setCharacteristicId(characteristicUuid);
+		$scope.modal.hide();
+	};
+
+	//Cleanup the modal when we're done with it!
+	$scope.$on('$destroy', function() {
+		$scope.modal.remove();
+	});
+
+	$scope.$on('$ionicView.enter', function(){ //This is fired twice in a row
+        console.log("Connection view entered.");
+		$scope.deviceName = blePerpheralsService.getSelectedDeviceName();
+        $scope.openModal();
+    });
+
+	$scope.$on('$ionicView.beforeLeave', function(){ //This is fired twice in a row
+        console.log("Before Connection view left.");
+        $scope.disconnect();
+    });    
+
+	/*
+    Description: Convert String to ArrayBuffer 
+	*/
+	var stringToBytes = function(string) {
+	   var array = new Uint8Array(string.length);
+	   for (var i = 0, l = string.length; i < l; i++) {
+	       array[i] = string.charCodeAt(i);
+	    }
+	    return array.buffer;
+	}
+
+	/*
+	    Description: Convert ArrayBuffer to String
+	*/
+	var bytesToString = function(buffer) {
+	    return String.fromCharCode.apply(null, new Uint8Array(buffer));
+	}
+
+	/*onRead callback*/
 	var onRead = function(data) {
 		console.log("data read");
         var str = bytesToString(data);
@@ -93,10 +162,8 @@ A sample application that demonstrates how to scan, connect, read and write data
         //read(device_id, service_uuid, characteristic_uuid, success_function, failure_function)
         ble.read(blePerpheralsService.getSelectedDeviceId(), blePerpheralsService.getServiceId(), blePerpheralsService.getCharacteristicId(), onRead, blePerpheralsService.onError);
     }
-```
-###Write Data to a connected BLE peripheral
-```javascript
-/*onWrite callback*/
+
+    /*onWrite callback*/
 	var onWrite = function() {
 	    console.log("data written to BLE peripheral");
 	}
@@ -108,26 +175,21 @@ A sample application that demonstrates how to scan, connect, read and write data
         console.log(stringToBytes(str));
         ble.write(blePerpheralsService.getSelectedDeviceId(), blePerpheralsService.getServiceId(), blePerpheralsService.getCharacteristicId(), stringToBytes(str), onWrite, blePerpheralsService.onError);
     }
-```
 
-###Disconnect from BLE peripheral
-```javascript
-ble.disconnect(blePerpheralsService.getSelectedDeviceId(), backToHome, blePerpheralsService.onError);
+	/*Description: Transition to home View and reset peripheral list*/
+	var backToHome = function () {
+		console.log("Connection disconnected");
+		$scope.navigateTo("home");
+		$scope.blePeripherals = [];
+	};
 
-```
+	/*Description: Disconnect from the BLE peripheral*/
+	$scope.disconnect = function() {
+	    ble.disconnect(blePerpheralsService.getSelectedDeviceId(), backToHome, blePerpheralsService.onError);
+	};
 
-Intel(R) XDK 
--------------------------------------------
-This sample is part of the Intel(R) XDK. 
-Download the Intel(R) XDK at http://software.intel.com/en-us/html5. To see the technical details of the sample, 
-please visit the sample article page at TBA.
+	$scope.navigateTo = function(stateName) {
+		$state.go(stateName);
+	}
 
-
-Important App Files
----------------------------
-* index.html
-* index.css
-* index.js
-* screenshot.png
-* app.json
-* README.md
+});

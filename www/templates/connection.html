@@ -1,0 +1,22 @@
+<ion-view view-title="Connection Details">
+  <ion-content>
+    <div class="container align-center">
+    	<div class="description">
+    		Connected to {{deviceName}}
+    	</div>
+        <span><b>Message</b></span><br>
+    	<div class="message">
+    		{{dataMessage}}
+    	</div>
+    	<button class="button button-block button-balanced" ng-click="readData()">
+			Read Data
+		</button>
+		<button class="button button-block button-balanced" ng-click="writeData()">
+			Write Data
+		</button>
+		<button class="button button-block button-assertive" ng-click="disconnect()">
+			Disconnect
+		</button>
+    </div>
+  </ion-content>
+</ion-view>

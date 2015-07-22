@@ -6,7 +6,7 @@
       "projectTypeName": "com.intel.xdk.projecttype.jsapp",
       "src": "",
       "projectGuid": "00000000-0000-0000-0000-000000000000",
-      "lastModifiedDate": 1436633214535,
+      "lastModifiedDate": 1437559823997,
       "creationDate": 1436572620779
     },
     "sourceDirectory": "www",
@@ -59,6 +59,29 @@
         "origin": "com.megster.cordova.ble",
         "originType": "cordova.io",
         "sourceLocation": ""
+      },
+      {
+        "id": "org.apache.cordova.dialogs",
+        "version": "0.2.11",
+        "selectedState": "Included",
+        "data": {},
+        "paramvals": {},
+        "dependsOn": [],
+        "dependedBy": []
+      },
+      {
+        "id": "com.ionic.keyboard",
+        "version": "",
+        "selectedState": "Included",
+        "data": {},
+        "paramvals": {},
+        "dependsOn": [],
+        "dependedBy": [],
+        "custom": "true",
+        "name": "Ionic Keyboard Plugin",
+        "origin": "com.ionic.keyboard",
+        "originType": "cordova.io",
+        "sourceLocation": ""
       }
     ],
     "serviceMethods": [],
@@ -86,8 +109,8 @@
         "excludedLibraries_": "",
         "appVersion_": "0.0.1",
         "appVersionCode_": "1",
-        "crosswalkVersion_": "11",
-        "cordovaCLIVersion_": "4.1.2"
+        "crosswalkVersion_": "?"
+        "cordovaCLIVersion_": "?"
       },
       "Android-Crosswalk": {
         "platform_": "android",
@@ -112,8 +135,8 @@
         "excludedLibraries_": "",
         "appVersion_": "0.0.1",
         "appVersionCode_": "1",
-        "crosswalkVersion_": "11",
-        "cordovaCLIVersion_": "4.1.2"
+        "crosswalkVersion_": "?"
+        "cordovaCLIVersion_": "?"
       },
       "iOS": {
         "platform_": "ios",
@@ -136,7 +159,7 @@
         "addlPermissions_": "",
         "excludedLibraries_": "",
         "appVersion_": "0.0.1",
-        "cordovaCLIVersion_": "4.1.2",
+        "cordovaCLIVersion_": "?",
         "iosProvs_": []
       },
       "Windows8": {
@@ -157,7 +180,7 @@
         "addlPermissions_": "",
         "excludedLibraries_": "",
         "appVersion_": "0.0.0.1",
-        "cordovaCLIVersion_": "4.1.2"
+        "cordovaCLIVersion_": "?"
       },
       "WebApp": {
         "platform_": "webapp",

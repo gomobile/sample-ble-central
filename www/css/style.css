@@ -1,0 +1,44 @@
+.container {
+	margin-left: auto;
+	margin-right: auto;
+	padding: 1em;
+}
+
+.align-center {
+	text-align: center;
+}
+
+.align-left {
+		text-align: left;
+}
+
+.description {
+	padding-bottom: 1em;
+}
+
+.description > i {
+	font-size: 3em !important;
+  	color: #0A3D91;
+}
+
+.hidden {
+	display: none;
+}
+
+.message {
+	color: #0A3D91;
+	font-size: 2em;
+	padding: 1em 0em;
+}
+
+.in-progress {
+	color: red;
+}
+
+.complete {
+	color: green;
+}
+
+input {
+	text-transform: uppercase;
+}
