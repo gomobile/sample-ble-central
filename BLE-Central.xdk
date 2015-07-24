@@ -109,7 +109,7 @@
         "excludedLibraries_": "",
         "appVersion_": "0.0.1",
         "appVersionCode_": "1",
-        "crosswalkVersion_": "?"
+        "crosswalkVersion_": "?",
         "cordovaCLIVersion_": "?"
       },
       "Android-Crosswalk": {
@@ -135,7 +135,7 @@
         "excludedLibraries_": "",
         "appVersion_": "0.0.1",
         "appVersionCode_": "1",
-        "crosswalkVersion_": "?"
+        "crosswalkVersion_": "?",
         "cordovaCLIVersion_": "?"
       },
       "iOS": {
