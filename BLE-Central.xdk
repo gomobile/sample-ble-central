@@ -1,263 +1,263 @@
 {
-  "project": {
-    "projectSettingsVersion": "1.2",
-    "creationData": {
-      "type": "Import",
-      "projectTypeName": "com.intel.xdk.projecttype.jsapp",
-      "src": "",
-      "projectGuid": "00000000-0000-0000-0000-000000000000",
-      "lastModifiedDate": 1437559823997,
-      "creationDate": 1436572620779
-    },
-    "sourceDirectory": "www",
-    "cordovaPluginsDirectory": "plugins",
-    "gameAssetDirectory": "asset",
-    "gameMetadata": {},
-    "startFile": "index.html",
-    "projectTags": [],
-    "projectFiles": {},
-    "projectDirectories": {},
-    "libraries": [],
-    "cordovaPlugins": [
-      {
-        "id": "org.apache.cordova.device",
-        "version": "0.2.13",
-        "selectedState": "Auto",
-        "data": {},
-        "paramvals": {},
-        "dependsOn": [],
-        "dependedBy": []
-      },
-      {
-        "id": "org.apache.cordova.splashscreen",
-        "version": "0.3.5",
-        "selectedState": "Auto",
-        "data": {},
-        "paramvals": {},
-        "dependsOn": [],
-        "dependedBy": []
-      },
-      {
-        "id": "org.apache.cordova.statusbar",
-        "version": "0.1.9",
-        "selectedState": "Included",
-        "data": {},
-        "paramvals": {},
-        "dependsOn": [],
-        "dependedBy": []
-      },
-      {
-        "id": "com.megster.cordova.ble",
-        "version": "",
-        "selectedState": "Included",
-        "data": {},
-        "paramvals": {},
-        "dependsOn": [],
-        "dependedBy": [],
-        "custom": "true",
-        "name": "Bluetooth Low Energy (BLE) Central Plugin",
-        "origin": "com.megster.cordova.ble",
-        "originType": "cordova.io",
-        "sourceLocation": ""
-      },
-      {
-        "id": "org.apache.cordova.dialogs",
-        "version": "0.2.11",
-        "selectedState": "Included",
-        "data": {},
-        "paramvals": {},
-        "dependsOn": [],
-        "dependedBy": []
-      },
-      {
-        "id": "com.ionic.keyboard",
-        "version": "",
-        "selectedState": "Included",
-        "data": {},
-        "paramvals": {},
-        "dependsOn": [],
-        "dependedBy": [],
-        "custom": "true",
-        "name": "Ionic Keyboard Plugin",
-        "origin": "com.ionic.keyboard",
-        "originType": "cordova.io",
-        "sourceLocation": ""
-      }
-    ],
-    "serviceMethods": [],
-    "buildConfigurations": {
-      "Android": {
-        "platform_": "android",
-        "runtime_": "Cordova 3.x",
-        "name_": "Android",
-        "preferences_": {
-          "android-minSdkVersion": "10",
-          "android-targetSdkVersion": "19",
-          "android-installLocation": "auto"
+    "project": {
+        "projectSettingsVersion": "1.2",
+        "creationData": {
+            "type": "Import",
+            "projectTypeName": "com.intel.xdk.projecttype.jsapp",
+            "src": "",
+            "projectGuid": "00000000-0000-0000-0000-000000000000",
+            "lastModifiedDate": 1437559823997,
+            "creationDate": 1436572620779
         },
-        "isActive_": true,
-        "appName_": "BLE-Central",
-        "appID_": "not.yet.specified",
-        "appAccess_": [
-          {
-            "origin": "*"
-          }
+        "sourceDirectory": "www",
+        "cordovaPluginsDirectory": "plugins",
+        "gameAssetDirectory": "asset",
+        "gameMetadata": {},
+        "startFile": "index.html",
+        "projectTags": [],
+        "projectFiles": {},
+        "projectDirectories": {},
+        "libraries": [],
+        "cordovaPlugins": [
+            {
+                "id": "org.apache.cordova.device",
+                "version": "0.2.13",
+                "selectedState": "Auto",
+                "data": {},
+                "paramvals": {},
+                "dependsOn": [],
+                "dependedBy": []
+            },
+            {
+                "id": "org.apache.cordova.splashscreen",
+                "version": "0.3.5",
+                "selectedState": "Auto",
+                "data": {},
+                "paramvals": {},
+                "dependsOn": [],
+                "dependedBy": []
+            },
+            {
+                "id": "org.apache.cordova.statusbar",
+                "version": "0.1.9",
+                "selectedState": "Included",
+                "data": {},
+                "paramvals": {},
+                "dependsOn": [],
+                "dependedBy": []
+            },
+            {
+                "id": "com.megster.cordova.ble",
+                "version": "",
+                "selectedState": "Included",
+                "data": {},
+                "paramvals": {},
+                "dependsOn": [],
+                "dependedBy": [],
+                "custom": "true",
+                "name": "Bluetooth Low Energy (BLE) Central Plugin",
+                "origin": "com.megster.cordova.ble",
+                "originType": "cordova.io",
+                "sourceLocation": ""
+            },
+            {
+                "id": "org.apache.cordova.dialogs",
+                "version": "0.2.11",
+                "selectedState": "Included",
+                "data": {},
+                "paramvals": {},
+                "dependsOn": [],
+                "dependedBy": []
+            },
+            {
+                "id": "com.ionic.keyboard",
+                "version": "",
+                "selectedState": "Included",
+                "data": {},
+                "paramvals": {},
+                "dependsOn": [],
+                "dependedBy": [],
+                "custom": "true",
+                "name": "Ionic Keyboard Plugin",
+                "origin": "com.ionic.keyboard",
+                "originType": "cordova.io",
+                "sourceLocation": ""
+            }
         ],
-        "icons_": [],
-        "splashes_": [],
-        "addlPermissions_": "",
-        "excludedLibraries_": "",
-        "appVersion_": "0.0.1",
-        "appVersionCode_": "1",
-        "crosswalkVersion_": "?",
-        "cordovaCLIVersion_": "?"
-      },
-      "Android-Crosswalk": {
-        "platform_": "android",
-        "runtime_": "Crosswalk with Cordova 3.x",
-        "name_": "Android-Crosswalk",
-        "preferences_": {
-          "android-minSdkVersion": "14",
-          "android-targetSdkVersion": "19",
-          "android-installLocation": "auto"
-        },
-        "isActive_": true,
-        "appName_": "BLE-Central",
-        "appID_": "not.yet.specified",
-        "appAccess_": [
-          {
-            "origin": "*"
-          }
-        ],
-        "icons_": [],
-        "splashes_": [],
-        "addlPermissions_": "",
-        "excludedLibraries_": "",
-        "appVersion_": "0.0.1",
-        "appVersionCode_": "1",
-        "crosswalkVersion_": "?",
-        "cordovaCLIVersion_": "?"
-      },
-      "iOS": {
-        "platform_": "ios",
-        "runtime_": "Cordova 3.x",
-        "name_": "iOS",
-        "preferences_": {
-          "ios-target": "6",
-          "ios-configuration": "adhoc"
-        },
-        "isActive_": true,
-        "appName_": "BLE-Central",
-        "appID_": "not.yet.specified",
-        "appAccess_": [
-          {
-            "origin": "*"
-          }
-        ],
-        "icons_": [],
-        "splashes_": [],
-        "addlPermissions_": "",
-        "excludedLibraries_": "",
-        "appVersion_": "0.0.1",
-        "cordovaCLIVersion_": "?",
-        "iosProvs_": []
-      },
-      "Windows8": {
-        "platform_": "windows8",
-        "runtime_": "Cordova 3.x",
-        "name_": "Windows8",
-        "preferences_": {},
-        "isActive_": true,
-        "appName_": "BLE-Central",
-        "appID_": "not.yet.specified",
-        "appAccess_": [
-          {
-            "origin": "*"
-          }
-        ],
-        "icons_": [],
-        "splashes_": [],
-        "addlPermissions_": "",
-        "excludedLibraries_": "",
-        "appVersion_": "0.0.0.1",
-        "cordovaCLIVersion_": "?"
-      },
-      "WebApp": {
-        "platform_": "webapp",
-        "runtime_": "W3C",
-        "name_": "WebApp",
-        "preferences_": {},
-        "isActive_": false,
-        "appName_": "BLE-Central",
-        "appID_": "not.yet.specified",
-        "appAccess_": [
-          {
-            "origin": "*"
-          }
-        ],
-        "icons_": [],
-        "splashes_": [],
-        "addlPermissions_": "",
-        "excludedLibraries_": "",
-        "appVersion_": "0.0.1"
-      },
-      "Firefox": {
-        "platform_": "firefoxos",
-        "runtime_": "W3C on Firefox OS",
-        "name_": "Firefox",
-        "preferences_": {},
-        "isActive_": false,
-        "appName_": "BLE-Central",
-        "appID_": "not.yet.specified",
-        "appAccess_": [
-          {
-            "origin": "*"
-          }
-        ],
-        "icons_": [],
-        "splashes_": [],
-        "addlPermissions_": "",
-        "excludedLibraries_": "",
-        "appVersion_": "0.0.1"
-      },
-      "Chrome": {
-        "platform_": "chromeos",
-        "runtime_": "W3C on Chrome OS",
-        "name_": "Chrome",
-        "preferences_": {},
-        "isActive_": false,
-        "appName_": "BLE-Central",
-        "appID_": "not.yet.specified",
-        "appAccess_": [
-          {
-            "origin": "*"
-          }
-        ],
-        "icons_": [],
-        "splashes_": [],
-        "addlPermissions_": "",
-        "excludedLibraries_": "",
-        "appVersion_": "0.0.1"
-      },
-      "Facebook": {
-        "platform_": "facebook",
-        "runtime_": "W3C on Facebook",
-        "name_": "Facebook",
-        "preferences_": {},
-        "isActive_": false,
-        "appName_": "BLE-Central",
-        "appID_": "not.yet.specified",
-        "appAccess_": [
-          {
-            "origin": "*"
-          }
-        ],
-        "icons_": [],
-        "splashes_": [],
-        "addlPermissions_": "",
-        "excludedLibraries_": "",
-        "appVersion_": "0.0.1"
-      }
+        "serviceMethods": [],
+        "buildConfigurations": {
+            "Android": {
+                "platform_": "android",
+                "runtime_": "Cordova 3.x",
+                "name_": "Android",
+                "preferences_": {
+                    "android-minSdkVersion": "14",
+                    "android-targetSdkVersion": "19",
+                    "android-installLocation": "auto"
+                },
+                "isActive_": true,
+                "appName_": "BLE-Central",
+                "appID_": "not.yet.specified",
+                "appAccess_": [
+                    {
+                        "origin": "*"
+                    }
+                ],
+                "icons_": [],
+                "splashes_": [],
+                "addlPermissions_": "",
+                "excludedLibraries_": "",
+                "appVersion_": "0.0.1",
+                "appVersionCode_": "1",
+                "crosswalkVersion_": "?",
+                "cordovaCLIVersion_": "?"
+            },
+            "Android-Crosswalk": {
+                "platform_": "android",
+                "runtime_": "Crosswalk with Cordova 3.x",
+                "name_": "Android-Crosswalk",
+                "preferences_": {
+                    "android-minSdkVersion": "14",
+                    "android-targetSdkVersion": "19",
+                    "android-installLocation": "auto"
+                },
+                "isActive_": true,
+                "appName_": "BLE-Central",
+                "appID_": "not.yet.specified",
+                "appAccess_": [
+                    {
+                        "origin": "*"
+                    }
+                ],
+                "icons_": [],
+                "splashes_": [],
+                "addlPermissions_": "",
+                "excludedLibraries_": "",
+                "appVersion_": "0.0.1",
+                "appVersionCode_": "1",
+                "crosswalkVersion_": "?",
+                "cordovaCLIVersion_": "?"
+            },
+            "iOS": {
+                "platform_": "ios",
+                "runtime_": "Cordova 3.x",
+                "name_": "iOS",
+                "preferences_": {
+                    "ios-target": "6",
+                    "ios-configuration": "adhoc"
+                },
+                "isActive_": true,
+                "appName_": "BLE-Central",
+                "appID_": "not.yet.specified",
+                "appAccess_": [
+                    {
+                        "origin": "*"
+                    }
+                ],
+                "icons_": [],
+                "splashes_": [],
+                "addlPermissions_": "",
+                "excludedLibraries_": "",
+                "appVersion_": "0.0.1",
+                "cordovaCLIVersion_": "?",
+                "iosProvs_": []
+            },
+            "Windows8": {
+                "platform_": "windows8",
+                "runtime_": "Cordova 3.x",
+                "name_": "Windows8",
+                "preferences_": {},
+                "isActive_": true,
+                "appName_": "BLE-Central",
+                "appID_": "not.yet.specified",
+                "appAccess_": [
+                    {
+                        "origin": "*"
+                    }
+                ],
+                "icons_": [],
+                "splashes_": [],
+                "addlPermissions_": "",
+                "excludedLibraries_": "",
+                "appVersion_": "0.0.0.1",
+                "cordovaCLIVersion_": "?"
+            },
+            "WebApp": {
+                "platform_": "webapp",
+                "runtime_": "W3C",
+                "name_": "WebApp",
+                "preferences_": {},
+                "isActive_": false,
+                "appName_": "BLE-Central",
+                "appID_": "not.yet.specified",
+                "appAccess_": [
+                    {
+                        "origin": "*"
+                    }
+                ],
+                "icons_": [],
+                "splashes_": [],
+                "addlPermissions_": "",
+                "excludedLibraries_": "",
+                "appVersion_": "0.0.1"
+            },
+            "Firefox": {
+                "platform_": "firefoxos",
+                "runtime_": "W3C on Firefox OS",
+                "name_": "Firefox",
+                "preferences_": {},
+                "isActive_": false,
+                "appName_": "BLE-Central",
+                "appID_": "not.yet.specified",
+                "appAccess_": [
+                    {
+                        "origin": "*"
+                    }
+                ],
+                "icons_": [],
+                "splashes_": [],
+                "addlPermissions_": "",
+                "excludedLibraries_": "",
+                "appVersion_": "0.0.1"
+            },
+            "Chrome": {
+                "platform_": "chromeos",
+                "runtime_": "W3C on Chrome OS",
+                "name_": "Chrome",
+                "preferences_": {},
+                "isActive_": false,
+                "appName_": "BLE-Central",
+                "appID_": "not.yet.specified",
+                "appAccess_": [
+                    {
+                        "origin": "*"
+                    }
+                ],
+                "icons_": [],
+                "splashes_": [],
+                "addlPermissions_": "",
+                "excludedLibraries_": "",
+                "appVersion_": "0.0.1"
+            },
+            "Facebook": {
+                "platform_": "facebook",
+                "runtime_": "W3C on Facebook",
+                "name_": "Facebook",
+                "preferences_": {},
+                "isActive_": false,
+                "appName_": "BLE-Central",
+                "appID_": "not.yet.specified",
+                "appAccess_": [
+                    {
+                        "origin": "*"
+                    }
+                ],
+                "icons_": [],
+                "splashes_": [],
+                "addlPermissions_": "",
+                "excludedLibraries_": "",
+                "appVersion_": "0.0.1"
+            }
+        }
     }
-  }
 }
