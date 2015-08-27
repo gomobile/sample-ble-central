@@ -87,8 +87,8 @@
                 "dependedBy": [],
                 "custom": "true",
                 "name": "BLE",
-                "origin": "com.megster.cordova.ble",
-                "originType": "cordova.io",
+                "origin": "https://github.com/don/cordova-plugin-ble-central.git",
+                "originType": "repo",
                 "sourceLocation": "",
                 "permissions": {
                     "android:name": [
