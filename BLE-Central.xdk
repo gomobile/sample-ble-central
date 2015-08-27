@@ -119,7 +119,7 @@
                 "description": "Cordova Notification Plugin"
             },
             {
-                "id": "com.ionic.keyboard",
+                "id": "ionic-plugin-keyboard",
                 "version": "?",
                 "selectedState": "Included",
                 "data": {},
@@ -128,7 +128,7 @@
                 "dependedBy": [],
                 "custom": "true",
                 "name": "Keyboard",
-                "origin": "com.ionic.keyboard",
+                "origin": "ionic-plugin-keyboard",
                 "originType": "cordova.io",
                 "sourceLocation": "",
                 "permissions": {},
