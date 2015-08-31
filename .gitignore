@@ -2,10 +2,14 @@
 # in essence, everything but *.xdk file and www directory
 /*
 !/www
+!/docs
 !/config.xml
 !/README.md
 !/LICENSE.md
 !/intelxdk.config.additions.xml
 !/*.xdk
 !/.gitignore
-!/*.png
+!/.jscodehints
+!/app.json
+!/screenshot.png
+!/icon.png

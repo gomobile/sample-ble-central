@@ -40,7 +40,7 @@
                 "topLevel": true,
                 "gitref": "",
                 "name": "Device",
-                "cordovaVersion": ">=3.1.0",
+                "cordovaVersion": "?",
                 "description": "Cordova Device Plugin"
             },
             {
@@ -57,7 +57,7 @@
                 "topLevel": true,
                 "gitref": "",
                 "name": "Splashscreen",
-                "cordovaVersion": ">=3.1.0",
+                "cordovaVersion": "?",
                 "description": "Cordova Splashscreen Plugin"
             },
             {
@@ -74,7 +74,7 @@
                 "topLevel": true,
                 "gitref": "",
                 "name": "StatusBar",
-                "cordovaVersion": ">=3.0.0",
+                "cordovaVersion": "?",
                 "description": "Cordova StatusBar Plugin"
             },
             {
@@ -90,15 +90,10 @@
                 "origin": "https://github.com/don/cordova-plugin-ble-central.git",
                 "originType": "repo",
                 "sourceLocation": "",
-                "permissions": {
-                    "android:name": [
-                        "android.permission.BLUETOOTH",
-                        "android.permission.BLUETOOTH_ADMIN"
-                    ]
-                },
+                "permissions": {},
                 "topLevel": true,
                 "gitref": "",
-                "cordovaVersion": ">=3.1.0",
+                "cordovaVersion": "?",
                 "description": "Bluetooth Low Energy (BLE) Central Plugin"
             },
             {
@@ -115,7 +110,7 @@
                 "topLevel": true,
                 "gitref": "",
                 "name": "Notification",
-                "cordovaVersion": ">=3.1.0",
+                "cordovaVersion": "?",
                 "description": "Cordova Notification Plugin"
             },
             {
@@ -139,10 +134,10 @@
         ],
         "serviceMethods": [],
         "buildConfigurations": {
-            "Android": {
+            "Android-Crosswalk": {
                 "platform_": "android",
-                "runtime_": "Cordova 3.x",
-                "name_": "Android",
+                "runtime_": "Crosswalk with Cordova 3.x",
+                "name_": "Android-Crosswalk",
                 "preferences_": {
                     "android-minSdkVersion": "14",
                     "android-targetSdkVersion": "19",
@@ -169,10 +164,10 @@
                 "cordovaCLIVersion_": "?",
                 "appAuthor_": "Intel XDK"
             },
-            "Android-Crosswalk": {
+            "Android": {
                 "platform_": "android",
-                "runtime_": "Crosswalk with Cordova 3.x",
-                "name_": "Android-Crosswalk",
+                "runtime_": "Cordova 3.x",
+                "name_": "Android",
                 "preferences_": {
                     "android-minSdkVersion": "14",
                     "android-targetSdkVersion": "19",
