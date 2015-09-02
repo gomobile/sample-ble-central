@@ -1,13 +1,12 @@
 {
     "project": {
-        "projectSettingsVersion": "1.2",
+        "projectSettingsVersion": "2.0.0",
         "creationData": {
-            "type": "Import",
             "projectTypeName": "com.intel.xdk.projecttype.jsapp",
-            "src": "",
+            "src": "jsapp/sample-ble-central/sample.zip",
             "projectGuid": "00000000-0000-0000-0000-000000000000",
-            "lastModifiedDate": 1437559823997,
-            "creationDate": 1436572620779
+            "lastModifiedDate": 1440322277298,
+            "creationDate": 1440322251962
         },
         "sourceDirectory": "www",
         "cordovaPluginsDirectory": "plugins",
@@ -16,13 +15,21 @@
         "startFile": "index.html",
         "projectTags": [],
         "projectFiles": {},
-        "projectDirectories": {},
+        "projectDirectories": {
+            "www/xdk": {
+                "settings": {
+                    "project": {
+                        "XDK-generated": "true"
+                    }
+                }
+            }
+        },
         "libraries": [],
         "cordovaPlugins": [
             {
-                "id": "org.apache.cordova.device",
-                "version": "0.2.13",
-                "selectedState": "Auto",
+                "id": "cordova-plugin-device",
+                "version": "?",
+                "selectedState": "Included",
                 "data": {},
                 "paramvals": {},
                 "dependsOn": [],
@@ -37,9 +44,9 @@
                 "description": "Cordova Device Plugin"
             },
             {
-                "id": "org.apache.cordova.splashscreen",
-                "version": "0.3.5",
-                "selectedState": "Auto",
+                "id": "cordova-plugin-splashscreen",
+                "version": "?",
+                "selectedState": "Included",
                 "data": {},
                 "paramvals": {},
                 "dependsOn": [],
@@ -54,8 +61,8 @@
                 "description": "Cordova Splashscreen Plugin"
             },
             {
-                "id": "org.apache.cordova.statusbar",
-                "version": "0.1.9",
+                "id": "cordova-plugin-statusbar",
+                "version": "?",
                 "selectedState": "Included",
                 "data": {},
                 "paramvals": {},
@@ -72,7 +79,7 @@
             },
             {
                 "id": "com.megster.cordova.ble",
-                "version": "",
+                "version": "?",
                 "selectedState": "Included",
                 "data": {},
                 "paramvals": {},
@@ -90,8 +97,8 @@
                 "description": "Bluetooth Low Energy (BLE) Central Plugin"
             },
             {
-                "id": "org.apache.cordova.dialogs",
-                "version": "0.2.11",
+                "id": "cordova-plugin-dialogs",
+                "version": "?",
                 "selectedState": "Included",
                 "data": {},
                 "paramvals": {},
@@ -118,7 +125,11 @@
                 "name": "Keyboard",
                 "origin": "ionic-plugin-keyboard",
                 "originType": "cordova.io",
-                "sourceLocation": ""
+                "sourceLocation": "",
+                "permissions": {},
+                "topLevel": true,
+                "gitref": "",
+                "description": "Ionic Keyboard Plugin"
             }
         ],
         "serviceMethods": [],
@@ -133,13 +144,16 @@
                     "android-installLocation": "auto"
                 },
                 "isActive_": true,
-                "appName_": "BLE-Central",
+                "appName_": "ble-central",
                 "appID_": "not.yet.specified",
-                "appAccess_": [
-                    {
-                        "origin": "*"
-                    }
-                ],
+                "appAccess_": {
+                    "mode": "legacy",
+                    "network": [
+                        "http://debug-software.intel.com/*"
+                    ],
+                    "intents": [],
+                    "navigation": []
+                },
                 "icons_": [],
                 "splashes_": [],
                 "addlPermissions_": "",
@@ -147,7 +161,8 @@
                 "appVersion_": "0.0.1",
                 "appVersionCode_": "1",
                 "crosswalkVersion_": "?",
-                "cordovaCLIVersion_": "?"
+                "cordovaCLIVersion_": "?",
+                "appAuthor_": "Intel XDK"
             },
             "Android": {
                 "platform_": "android",
@@ -159,13 +174,16 @@
                     "android-installLocation": "auto"
                 },
                 "isActive_": true,
-                "appName_": "BLE-Central",
+                "appName_": "ble-central",
                 "appID_": "not.yet.specified",
-                "appAccess_": [
-                    {
-                        "origin": "*"
-                    }
-                ],
+                "appAccess_": {
+                    "mode": "legacy",
+                    "network": [
+                        "http://debug-software.intel.com/*"
+                    ],
+                    "intents": [],
+                    "navigation": []
+                },
                 "icons_": [],
                 "splashes_": [],
                 "addlPermissions_": "",
@@ -173,7 +191,8 @@
                 "appVersion_": "0.0.1",
                 "appVersionCode_": "1",
                 "crosswalkVersion_": "?",
-                "cordovaCLIVersion_": "?"
+                "cordovaCLIVersion_": "?",
+                "appAuthor_": "Intel XDK"
             },
             "iOS": {
                 "platform_": "ios",
@@ -184,20 +203,25 @@
                     "ios-configuration": "adhoc"
                 },
                 "isActive_": true,
-                "appName_": "BLE-Central",
+                "appName_": "ble-central",
                 "appID_": "not.yet.specified",
-                "appAccess_": [
-                    {
-                        "origin": "*"
-                    }
-                ],
+                "appAccess_": {
+                    "mode": "legacy",
+                    "network": [
+                        "http://debug-software.intel.com/*"
+                    ],
+                    "intents": [],
+                    "navigation": []
+                },
                 "icons_": [],
                 "splashes_": [],
                 "addlPermissions_": "",
                 "excludedLibraries_": "",
                 "appVersion_": "0.0.1",
                 "cordovaCLIVersion_": "?",
-                "iosProvs_": []
+                "iosProvs_": [],
+                "appAuthor_": "Intel XDK",
+                "crosswalkVersion_": "?"
             },
             "Windows8": {
                 "platform_": "windows8",
@@ -205,19 +229,24 @@
                 "name_": "Windows8",
                 "preferences_": {},
                 "isActive_": true,
-                "appName_": "BLE-Central",
+                "appName_": "ble-central",
                 "appID_": "not.yet.specified",
-                "appAccess_": [
-                    {
-                        "origin": "*"
-                    }
-                ],
+                "appAccess_": {
+                    "mode": "legacy",
+                    "network": [
+                        "http://debug-software.intel.com/*"
+                    ],
+                    "intents": [],
+                    "navigation": []
+                },
                 "icons_": [],
                 "splashes_": [],
                 "addlPermissions_": "",
                 "excludedLibraries_": "",
                 "appVersion_": "0.0.0.1",
-                "cordovaCLIVersion_": "?"
+                "cordovaCLIVersion_": "?",
+                "appAuthor_": "Intel XDK",
+                "crosswalkVersion_": "?"
             },
             "WebApp": {
                 "platform_": "webapp",
@@ -225,18 +254,22 @@
                 "name_": "WebApp",
                 "preferences_": {},
                 "isActive_": false,
-                "appName_": "BLE-Central",
+                "appName_": "ble-central",
                 "appID_": "not.yet.specified",
-                "appAccess_": [
-                    {
-                        "origin": "*"
-                    }
-                ],
+                "appAccess_": {
+                    "mode": "legacy",
+                    "network": [
+                        "http://debug-software.intel.com/*"
+                    ],
+                    "intents": [],
+                    "navigation": []
+                },
                 "icons_": [],
                 "splashes_": [],
                 "addlPermissions_": "",
                 "excludedLibraries_": "",
-                "appVersion_": "0.0.1"
+                "appVersion_": "0.0.1",
+                "appAuthor_": "Intel XDK"
             },
             "Firefox": {
                 "platform_": "firefoxos",
@@ -244,18 +277,22 @@
                 "name_": "Firefox",
                 "preferences_": {},
                 "isActive_": false,
-                "appName_": "BLE-Central",
+                "appName_": "ble-central",
                 "appID_": "not.yet.specified",
-                "appAccess_": [
-                    {
-                        "origin": "*"
-                    }
-                ],
+                "appAccess_": {
+                    "mode": "legacy",
+                    "network": [
+                        "http://debug-software.intel.com/*"
+                    ],
+                    "intents": [],
+                    "navigation": []
+                },
                 "icons_": [],
                 "splashes_": [],
                 "addlPermissions_": "",
                 "excludedLibraries_": "",
-                "appVersion_": "0.0.1"
+                "appVersion_": "0.0.1",
+                "appAuthor_": "Intel XDK"
             },
             "Chrome": {
                 "platform_": "chromeos",
@@ -263,18 +300,22 @@
                 "name_": "Chrome",
                 "preferences_": {},
                 "isActive_": false,
-                "appName_": "BLE-Central",
+                "appName_": "ble-central",
                 "appID_": "not.yet.specified",
-                "appAccess_": [
-                    {
-                        "origin": "*"
-                    }
-                ],
+                "appAccess_": {
+                    "mode": "legacy",
+                    "network": [
+                        "http://debug-software.intel.com/*"
+                    ],
+                    "intents": [],
+                    "navigation": []
+                },
                 "icons_": [],
                 "splashes_": [],
                 "addlPermissions_": "",
                 "excludedLibraries_": "",
-                "appVersion_": "0.0.1"
+                "appVersion_": "0.0.1",
+                "appAuthor_": "Intel XDK"
             },
             "Facebook": {
                 "platform_": "facebook",
@@ -282,19 +323,48 @@
                 "name_": "Facebook",
                 "preferences_": {},
                 "isActive_": false,
-                "appName_": "BLE-Central",
+                "appName_": "ble-central",
                 "appID_": "not.yet.specified",
-                "appAccess_": [
-                    {
-                        "origin": "*"
-                    }
-                ],
+                "appAccess_": {
+                    "mode": "legacy",
+                    "network": [
+                        "http://debug-software.intel.com/*"
+                    ],
+                    "intents": [],
+                    "navigation": []
+                },
                 "icons_": [],
                 "splashes_": [],
                 "addlPermissions_": "",
                 "excludedLibraries_": "",
-                "appVersion_": "0.0.1"
+                "appVersion_": "0.0.1",
+                "appAuthor_": "Intel XDK"
+            },
+            "WP81": {
+                "platform_": "wp81",
+                "runtime_": "Cordova 3.x",
+                "name_": "WP81",
+                "preferences_": {},
+                "isActive_": true,
+                "appName_": "ble-central",
+                "appID_": "not.yet.specified",
+                "appAccess_": {
+                    "mode": "legacy",
+                    "network": [
+                        "http://debug-software.intel.com/*"
+                    ],
+                    "intents": [],
+                    "navigation": []
+                },
+                "icons_": [],
+                "splashes_": [],
+                "addlPermissions_": "",
+                "excludedLibraries_": "",
+                "appVersion_": "0.0.0.1",
+                "cordovaCLIVersion_": "?",
+                "appAuthor_": "Intel XDK"
             }
-        }
+        },
+        "testDirectory": "test"
     }
 }
