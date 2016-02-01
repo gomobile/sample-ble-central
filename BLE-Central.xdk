@@ -78,7 +78,7 @@
                 "description": "Cordova StatusBar Plugin"
             },
             {
-                "id": "com.megster.cordova.ble",
+                "id": "cordova-plugin-ble-central",
                 "version": "?",
                 "selectedState": "Included",
                 "data": {},
