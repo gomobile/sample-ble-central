@@ -1,16 +1,16 @@
 {
   "title" : "BLE Central IoT Companion App",
   "projectTypeName" : "com.intel.xdk.projecttype.jsapp",
-  "sample": true,
-  "template": false,
+  "sample" : true,
+  "template" : false,
   "visible" : true,
-  "apppreview":true,
+  "apppreview" : true,
   "sortWeight" : "0.0",
   "repoName" : "sample-ble-central",
   "tooltip" : "IoT mobile companion app for the \"BLE Peripheral\" IoT Node.js app.",
   "description" : "An IoT mobile companion app for the \"BLE Peripheral\" IoT Node.js app. Scan, connect, read and write data from a Bluetooth Low Energy (BLE) peripheral device. The complementary IoT Node.js app is named \"BLE Peripheral\" and can be found in the \"Templates\" section of the \"Internet of Things (IoT)\" part of the \"Start a New Project\" page (from the Projects tab).",
-  "articleUrl" : "https://software.intel.com/en-us/creating-a-bluetooth-low-energy-app",
+  "articleUrl" : "https://software.intel.com/en-us/xdk/docs/using-templates-nodejs-iot",
   "keywords" : ["IoT Companion App","Bluetooth","BLE"],
-  "targets": [""],
-  "runtimes": [""]
+  "targets" : [""],
+  "runtimes" : [""]
 }

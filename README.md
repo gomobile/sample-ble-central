@@ -2,7 +2,19 @@ BLE Central IoT Companion App
 =============================
 See [LICENSE.md](LICENSE.md) for license terms and conditions.
 
-A sample application that demonstrates how to scan, connect, read and write data to a central from a Bluetooth Low Energy (BLE) peripheral via a service and it's specific characteristic.
+This sample application is distributed as part of the
+[Intel® XDK](http://xdk.intel.com). It can also be downloaded
+or cloned directly from its git repo on the
+[public Intel XDK GitHub\* site](https://github.com/gomobile).
+
+For help getting started developing applications with the
+Intel XDK, please start with
+[the Intel XDK documentation](https://software.intel.com/en-us/xdk/docs).
+
+App Overview
+------------
+A sample application that demonstrates how to scan, connect, read data from
+and write data to a Bluetooth Low Energy (BLE) peripheral.
 
 ###Scan for all BLE peripherals with or without a Service UUID
 ```javascript
@@ -119,10 +131,12 @@ ble.disconnect(blePerpheralsService.getSelectedDeviceId(), backToHome, blePerphe
 ```
 
 Important App Files
----------------------------
-* index.html
-* index.css
-* index.js
-* screenshot.png
-* app.json
+-------------------
+* www/index.html
+* www/js/app.js
+
+Important Project Files
+-----------------------
 * README.md
+* LICENSE.md
+* <project-name>.xdk
