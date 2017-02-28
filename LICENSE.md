@@ -33,6 +33,7 @@ NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
 SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 Bluetooth Low Energy Cordova Plugin
-==============================================
+===================================
+
 source: https://github.com/don/cordova-plugin-ble-central
 license: https://github.com/don/cordova-plugin-ble-central/blob/master/LICENSE.txt

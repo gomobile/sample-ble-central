@@ -1,5 +1,6 @@
 BLE Central IoT Companion App
 =============================
+
 See [LICENSE.md](LICENSE.md) for license terms and conditions.
 
 This sample application is distributed as part of the
@@ -13,10 +14,12 @@ Intel XDK, please start with
 
 App Overview
 ------------
+
 A sample application that demonstrates how to scan, connect, read data from
 and write data to a Bluetooth Low Energy (BLE) peripheral.
 
-###Scan for all BLE peripherals with or without a Service UUID
+### Scan for all BLE peripherals with or without a Service UUID
+
 ```javascript
 /*Description: Add discovered device to tempArray*/
 	var onDiscoverDevice = function(device) {
@@ -89,7 +92,8 @@ and write data to a Bluetooth Low Energy (BLE) peripheral.
 })
 ```
 
-###Read Data from connected BLE peripheral
+### Read Data from connected BLE peripheral
+
 ```javascript
 /*onRead callback*/
 	var onRead = function(data) {
@@ -108,7 +112,8 @@ and write data to a Bluetooth Low Energy (BLE) peripheral.
         ble.read(blePerpheralsService.getSelectedDeviceId(), blePerpheralsService.getServiceId(), blePerpheralsService.getCharacteristicId(), onRead, blePerpheralsService.onError);
     }
 ```
-###Write Data to a connected BLE peripheral
+### Write Data to a connected BLE peripheral
+
 ```javascript
 /*onWrite callback*/
 	var onWrite = function() {
@@ -124,7 +129,8 @@ and write data to a Bluetooth Low Energy (BLE) peripheral.
     }
 ```
 
-###Disconnect from BLE peripheral
+### Disconnect from BLE peripheral
+
 ```javascript
 ble.disconnect(blePerpheralsService.getSelectedDeviceId(), backToHome, blePerpheralsService.onError);
 
@@ -132,11 +138,13 @@ ble.disconnect(blePerpheralsService.getSelectedDeviceId(), backToHome, blePerphe
 
 Important App Files
 -------------------
+
 * www/index.html
 * www/js/app.js
 
 Important Project Files
 -----------------------
+
 * README.md
 * LICENSE.md
 * \<project-name\>.xdk
