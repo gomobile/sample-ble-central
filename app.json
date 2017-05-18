@@ -5,7 +5,7 @@
   "template" : false,
   "visible" : true,
   "apppreview" : true,
-  "sortWeight" : "0.0",
+  "sortWeight" : "0.7",
   "repoName" : "sample-ble-central",
   "tooltip" : "IoT mobile companion app for the \"BLE Peripheral\" IoT Node.js app.",
   "description" : "An IoT mobile companion app for the \"BLE Peripheral\" IoT Node.js app. Scan, connect, read and write data from a Bluetooth Low Energy (BLE) peripheral device. The complementary IoT Node.js app is named \"BLE Peripheral\" and can be found in the \"Templates\" section of the \"Internet of Things (IoT)\" part of the \"Start a New Project\" page (from the Projects tab).",
